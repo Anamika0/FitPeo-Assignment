@@ -1,0 +1,197 @@
+.topmenu {
+  top: 0;
+  right: 0;
+  left: 0;
+  vertical-align: top;
+  // background-color: #1f2029;
+  //background-color: #212727;
+  background-image: linear-gradient(
+    to right,
+    #0f211d,
+    #0f2924,
+    #0f312a,
+    #0e362f,
+    #0a3d34
+  );
+  height: 70px;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  padding-left: 20px;
+  padding-right: 50px;
+
+
+  z-index: 1;
+  justify-content: space-between;
+  .menu-option {
+    display: none;
+  }
+  .logo {
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 50px;
+    top: 0;
+  }
+  form {
+    background-color: #253630;
+    width: 300px;
+    height: 38px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+  }
+  input {
+    all: unset;
+
+    font: 16px system-ui;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+    display: flex;
+
+    ::placeholder {
+      display: flex;
+      opacity: 0.7;
+    }
+  }
+  button {
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+  }
+
+  svg {
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+  }
+}
+
+.profilepic {
+  height: 35px;
+  width: 35px;
+  margin-left: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.navbaritems {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  .navbaritem {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: #2d3f38;
+    color: #7c9688;
+
+    cursor: pointer;
+  }
+  .navbarimg {
+    height: 20px;
+    width: 20px;
+    padding: 9px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #95d6b7;
+  }
+}
+.navbaritem:hover {
+  background-color: #739480;
+  color: #a1ccb7;
+}
+.navbarimg:hover path {
+  background-color: #739480;
+  color: #a1ccb7;
+  fill: #a1ccb7;
+}
+
+@media screen and (max-width: 600px) {
+  .topmenu {
+    width: 100dvh;
+    overflow-x: hidden;
+    height: 150px;
+    z-index: 2;
+    justify-content: center;
+    .menu-option {
+      display: unset;
+      height: 80px;
+      width: 80px;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+    }
+
+    .logo {
+      height: 80px;
+      width: 150px;
+      margin: unset;
+      padding: unset;
+ 
+    }
+    .search-bar {
+      display: none;
+    }
+    .navbaritems {
+    margin-left: 70px;
+      gap: 40px;
+      .navbaritem {
+        height: 50px;
+        width: 50px;
+      }
+      .profilepic {
+        height: 60px;
+        width: 60px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 853px) {
+  .topmenu {
+
+    .logo {
+      height: 80px;
+      width: 150px;
+      margin: unset;
+      margin-right: 100px;
+      margin-left: 50px;
+    }
+  }
+}
+@media screen and (max-width: 590px) and (min-width:400px) {
+  .topmenu{
+   width: 100dvh;
+    .logo{
+      margin-left: 100px;
+    }
+  }
+
+}
+
+@media only screen and (min-width: 355px) and (max-width:380px)
+{
+  .topmenu{
+    width: 95ch;
+    
+    justify-content: center;
+     .logo{
+     //  margin-left: 10px;
+     }
+     .navbaritems{
+      margin: unset;
+     }
+   }
+}

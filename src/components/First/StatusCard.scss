@@ -1,0 +1,107 @@
+.statusitem {
+  background-image: linear-gradient(
+    to bottom,
+    #0f211d,
+    #0f2924,
+    #0d2923,
+    #0e3529,
+    #0e3d2d
+  );
+  height: 100px;
+  width: 140px;
+  border-radius: 4%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 13px;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-left: unset;
+  .status-item-left {
+    flex-direction: row;
+    gap: 5px;
+
+    .statusimage {
+      width: 38px;
+      height: 45px;
+      //   background-color: white;
+    }
+    .statusname {
+      font-size: 0.7em;
+    }
+    .statusstats {
+      margin-top: 7px;
+      font-weight: bold;
+      font-size: 1.5rem;
+      // font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-family: "Karla", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+  }
+  .status-item-right {
+    gap: 2px;
+    display: flex;
+    gap: 2px;
+    transform: translateY(80%);
+    font-size: 0.9rem;
+    font-weight: bold;
+    font-family: "Karla", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif,
+      sans-serif;
+    // align-items: end;
+  }
+}
+.uparrow {
+  height: 10px;
+  width: 10px;
+  margin-right: 0.5px;
+}
+
+@media screen and (max-width: 600px) {
+  .statusitem {
+    display: flex;
+
+    height: 300px;
+    width: 340px;
+    //  width: calc(50% - 90px);
+    margin: 2%;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    .status-item-left {
+      margin: 15px;
+      gap: 10px;
+
+      .statusimage {
+        width: 100px;
+        height: 100px;
+      }
+      .statusname {
+        font-size: 28px;
+        margin-top: 15px;
+      }
+      .statusstats {
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 70px;
+        // font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-family: "Karla", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+    }
+    .status-item-right {
+      gap: 2px;
+      margin: 10px;
+      display: flex;
+      margin-top: 120px;
+      gap: 2px;
+      transform: translateY(80%);
+      font-size: 30px;
+      font-weight: bold;
+      font-family: "Karla", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif,
+        sans-serif;
+    }
+    .uparrow {
+      height: 30px;
+      width: 30px;
+      margin-right: 0.5px;
+    }
+  }
+}

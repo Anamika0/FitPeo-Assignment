@@ -1,0 +1,122 @@
+.sidebar {
+  .menu-option {
+    display: none;
+  }
+  .sidebar-wrapper {
+    flex-direction: column;
+    width: 70px;
+    display: flex;
+
+    vertical-align: top;
+    align-self: flex-start;
+    height: 100dvh;
+    width: 180px;
+    display: flex;
+    z-index: 0;
+    background-image: linear-gradient(
+      to bottom,
+      #0f211d,
+      #0f2924,
+      #0d2923,
+      #0d3029,
+      #082e27
+    );
+    position: sticky;
+    top: 0;
+    margin-bottom: auto;
+
+    gap: 30px;
+
+    .logo {
+      display: flex;
+      padding: 8px;
+      justify-content: center;
+      align-items: center;
+      width: 120px;
+      height: 50px;
+      top: 0;
+    }
+    .listitems-wrapper {
+      margin-top: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      //align-items: center;
+      flex: 3;
+      .listitems {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+        font-size: 1.3em;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+
+        .listitem path {
+          height: 30px;
+          width: 30px;
+          color: #6f887b;
+        }
+        .listitemactive path {
+          height: 30px;
+          width: 30px;
+          padding-left: 50%;
+          color: #83ceb5;
+        }
+      }
+      .logoutitem {
+        display: flex;
+        padding-bottom: 30px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        padding-right: 5px;
+
+        .logout {
+          height: 30px;
+          width: 28px;
+          color: #6f887b;
+        }
+      }
+    }
+  }
+}
+.listitem:hover,
+.logout:hover,
+.listitem-name:hover {
+  fill: #83ceb5;
+  transform: scale(1.1);
+}
+.listitem-name {
+  color: #6f887b;
+}
+.line {
+  // background-color: white;
+  width: max-content;
+  float: left;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.active {
+  border-left: 5px solid #83ceb5;
+}
+
+.listitemnameactive {
+  color: #83ceb5;
+}
+
+@media screen and (max-width: 853px) {
+  .listitems,
+  .listitem-name,
+  .listitemnameactive {
+    display: none;
+  }
+  .sidebar {
+    display: none;
+  }
+}

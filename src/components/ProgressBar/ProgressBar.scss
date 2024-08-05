@@ -1,0 +1,68 @@
+.center {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  //  background: rgb(25, 25, 50);
+}
+.progress {
+  width: 90px;
+  height: 90px;
+  // background: rgb(78, 91, 205);
+  border-radius: 5mm;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.progress-circle {
+  fill: none;
+}
+.progress-bar {
+  // transform: rotate(-90deg);
+}
+.progress-circle:nth-child(1) {
+  stroke: rgb(25, 49, 45);
+  stroke-width: 12px;
+}
+.progress-circle:nth-child(2) {
+  stroke: rgb(52, 173, 113);
+  stroke-dasharray: 808;
+  stroke-dashoffset: calc(848 - (848 * 27) / 100);
+  stroke-linecap: round;
+  stroke-width: 10px;
+  animation: progress 1s ease;
+}
+@keyframes progress {
+  from {
+    stroke-dashoffset: 848;
+  }
+}
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .percent-completed {
+    font-family: serif;
+    //font-family: poppins;
+    font-family: "Karla", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+    color: rgb(156, 212, 179);
+    font-weight: 800;
+    font-size: 20px;
+    color: rgb(230, 230, 230);
+  }
+  .completed-text {
+    color: rgb(186, 201, 201);
+    font-size: 10px;
+    font-family: "Karla", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+}

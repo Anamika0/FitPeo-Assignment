@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+.status {
+  background-color: blue;
+  color: rgb(218, 236, 229);
+  font-size: 1.2em;
+
+  display: flex;
+  gap: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  .left-right-wrapper {
+    display: flex;
+    gap: 20px;
+    .lane1 {
+      display: flex;
+
+      gap: 25px;
+      flex-wrap: wrap;
+      background-color: white;
+
+      .statusitems {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+    }
+    .profit {
+      right: auto;
+
+      width: 350px;
+      border-radius: 4%;
+      background-image: linear-gradient(
+        to bottom,
+        #0f211d,
+        #0f2924,
+        #0d2923,
+        #0d3029,
+        #082e27
+      );
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 15px;
+
+      .profitleft {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .profitstats {
+          flex-direction: row;
+          display: flex;
+          gap: 5px;
+          font-size: 0.9rem;
+          font-weight: bold;
+          //  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+          font-family: "Karla", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif,
+            sans-serif;
+          font-weight: bold;
+        }
+        .profitrate {
+          //   margin-top: 5px;
+          font-weight: bold;
+          font-size: 1.9rem;
+
+          font-family: "Karla", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+          font-weight: bold;
+        }
+      }
+      .profitright {
+        padding-left: 50px;
+        padding-right: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 5px;
+        gap: 3px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+
+        .loading {
+          height: 90px;
+          width: 120px;
+        }
+        .info {
+          font-size: 0.4em;
+        }
+      }
+    }
+  }
+}
+
+.statusname {
+  font-size: 0.7em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
